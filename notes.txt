@@ -1,0 +1,15 @@
+Necessary Files:
+https://github.com/jonasschmedtmann/complete-javascript-course
+
+Extensions:
+- Monokai Pro
+
+Settings:
+-Auto save on focus change
+-multi cursor modifier: ctrlCmd
+-word wrap: on
+format on save: yes
+File Icon Theme: Seti
+
+Fetch/Push info:
+https://github.com/Seth21887/JS-Course.git 
