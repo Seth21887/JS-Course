@@ -13,3 +13,5 @@ File Icon Theme: Seti
 
 Fetch/Push info:
 https://github.com/Seth21887/JS-Course.git 
+
+I'm making an update to this file from my laptop.
