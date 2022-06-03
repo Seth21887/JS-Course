@@ -156,3 +156,97 @@
 //     century = 21;
 // }
 // console.log(century);
+
+// //***********************TYPE CONVERSION AND COERCION************************************* 
+// //Conversion: When we explicity want to change from one type to another.
+// const inputYear = '1991';
+// console.log(Number(inputYear)); //important to note that the original value is still not converted.
+// console.log(Number(inputYear) + 18); //this won't work as we can't concatanate a string and an integer.
+
+// console.log(Number('Jonas')); //this will return a NaN: meaning not a number or invalid number
+
+// console.log(String(23));
+
+// //Coercion: happens whenever an operator is dealing with two values that have different types.
+// console.log('I am' + 23 + ' years old'); //the + operators here triggers a coercion into string.
+// console.log('23' - '10' - 3); //this time, javascript converts the strings to numbers, the minus signs triggered the coercion.
+// console.log('23' * '2'); //multiplication operator coerces to a number, same is true with division operator
+
+// // ****************************************TRUTHy AND FALSY VALUES***********************************************
+// //Falsy values are values that are not exactly false but will become false when we try to convert them into a boolean
+// //5 Falsy values in JS: 0, '', undefined, null, NaN
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Seth')); //any string that is not an empty string is a truthy value.
+// console.log(Boolean({})); //this empty object will be a truthy value.
+// console.log(Boolean(''));
+
+// //in this if/else statement, 0 is converted to false automatically, if we change the number to anything other than 0, it will now be a truthy value
+// const money = 0;
+// if(money){
+//     console.log("Don't spend it all!");
+// }else{
+//     console.log("You should get a job");
+// }
+
+// //in this equation, we know that height is undefined, and an undefined is a falsy value, so the else statement will be executed.
+// let height;
+// if(height){
+//     console.log('YAY! Height is defined');
+// }else{
+//     console.log('Height is undefined');
+// }
+
+// // ***************************************************EQUALITY OPERATORS: == VS === **************************************************************
+// //the triple equal === is the strict equal, it does not perform type cooercion. Only returns true when both values are totally the same.
+// //the double equal == is the loose equal, and it does perform type coercion.
+// //as a general rule, avoid the loose equality operator as much as possible.
+// const age = 18;
+// if(age === 18) console.log('You just became an adult'); //we don't need the {} if only one line is needed.
+
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite); //it's a string
+
+// if (favorite == 23){
+//     console.log('Cool! 23 is an amazing number!');
+// }
+
+// if(favorite === 23){
+//     console.log('Cool! 23 is an amazing number!'); //this one will not work because favorite type is string while 23 is a number, so they don't equate. We can fix this by putting Number() when we're defining the favorite variable.
+// }else if(favorite === 7){
+//     console.log('7 is also a cool number')
+// }else{
+//     console.log('Number is not 23 or 7')
+// }
+
+// if(favorite !== 23) console.log('Why not 23?'); //!== means not equal to (loose version)
+
+// // *************************************** BOOLEAN LOGIC ***********************************************************************
+// //the not operator doesn't combine values, instead, it acts on only one boolean value, and basically just inverts it
+// //the not operator has precedence over the 'and' and 'or' operators
+// const hasDriversLicense = true; //variable A
+// const hasGoodVision = true; //variable B
+
+// console.log(hasDriversLicense && hasGoodVision); //use of the 'and' operator, the result of true and true will be true, the result of true and false will be false.
+// console.log(hasDriversLicense || hasGoodVision); //Or operator: will be true as long as one of the two is true.
+// console.log(!hasDriversLicense); //Not operator: this will change hasDriversLicense from true to false.
+
+// // const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// // if(shouldDrive){
+// //     console.log('Sarah is able to drive');
+// // }else{
+// //     console.log('Someone else should drive');
+// // }
+
+// const isTired = false; //variable C
+// console.log(hasDriversLicense || hasGoodVision || isTired);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+// if(shouldDrive){
+//     console.log('Sarah is able to drive');
+// }else{
+//     console.log('Someone else should drive');
+// }

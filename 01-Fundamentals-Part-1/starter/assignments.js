@@ -17,7 +17,7 @@
 // //let, const, and var
 
 // language = 'English';
-// // isIsland = true; //cannot be done to a const
+// isIsland = true; //cannot be done to a const
 
 // // Basic Operators
 
@@ -39,4 +39,29 @@
 //     console.log(`${country}'s population is above average.`);
 // }else{
 //     console.log(`${country}'s population is ${avgPopulation-population} below average.`);
+// }
+
+// Type Conversion and Coercion
+// console.log('9' - '5'); //4
+// console.log('19' - '13' + '17'); //617
+// console.log('19'-'13' + 17); //23
+// console.log('123'<57); //false
+// console.log(5+6+'4'+9-4-2); //117, actual answer is 1143
+
+// // Equality Operators
+//  let numNeighbors = Number(prompt('How many neighbor countries does your country have?'));
+//  if (numNeighbors === 1){
+//      console.log('Only 1 border');
+//  } else if(numNeighbors > 1){
+//      console.log('More than 1 border');
+//  }else{
+//      console.log('No Borders')
+//  }
+
+// Logical Operators
+// const isCountryRight = language === 'English' && population < 50000000 && isIsland
+// if(isCountryRight){
+//     console.log('You should live in the United States!');
+// }else{
+//     console.log('You should not live in the United States.');
 // }

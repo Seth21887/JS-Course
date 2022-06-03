@@ -9,20 +9,20 @@
 // Hint: Use an if/else statement 😉
 // GOOD LUCK 😀
 
-let heightMark = 1.69;
-let heightJohn = 1.95;
+// let heightMark = 1.69;
+// let heightJohn = 1.95;
 
-let weightMark = 78;
-let weightJohn = 92;
+// let weightMark = 78;
+// let weightJohn = 92;
 
-let bmiMark = weightMark / (heightMark**2);
-let bmiJohn = weightJohn / (heightJohn**2);
+// let bmiMark = weightMark / (heightMark**2);
+// let bmiJohn = weightJohn / (heightJohn**2);
 
-let markHigherBMI = bmiMark > bmiJohn;
-// console.log(bmiMark,bmiJohn, markHigherBMI);
+// let markHigherBMI = bmiMark > bmiJohn;
+// // console.log(bmiMark,bmiJohn, markHigherBMI);
 
-if(markHigherBMI){
-    console.log(`Mark's BMI of (${bmiMark}) is higher than John's BMI of (${bmiJohn})!`);
-}else{
-    console.log(`John's BMI of (${bmiJohn}) is higher than Mark's BMI of (${bmiMark})!`);
-}
+// if(markHigherBMI){
+//     console.log(`Mark's BMI of (${bmiMark}) is higher than John's BMI of (${bmiJohn})!`);
+// }else{
+//     console.log(`John's BMI of (${bmiJohn}) is higher than Mark's BMI of (${bmiMark})!`);
+// }
