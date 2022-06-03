@@ -18,3 +18,21 @@
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 // GOOD LUCK 😀
+
+// //calculating the average for each team
+// let dolphinsData = [96,108,89];
+// let koalasData = [88,91,110];
+
+// const scoreDolphins = (96+108+89) / 3;
+// const scoreKoalas = (88+91+110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas && scoreDolphins>=100) {
+//     console.log('Dolphins are the winner');
+// } else if (scoreKoalas > scoreDolphins && scoreKoalas>=100){
+//     console.log('Koalas are the winner');
+// }else if( scoreKoalas===scoreDolphins && scoreKoalas>=100 && scoreDolphins>=100){
+//     console.log('The match is a draw')
+// }else{
+//     console.log('Neither team played well enough to win or draw');
+// }

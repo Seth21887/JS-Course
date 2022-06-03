@@ -250,3 +250,55 @@
 // }else{
 //     console.log('Someone else should drive');
 // }
+
+// ************************************************* THE SWITCH STATEMENT *******************************************
+//the switch statement can be a lot more readable than the if/else statement, but it can take a little more code.
+
+const day = 'wednesday';
+
+switch(day){
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break; //without the break, the code simply keeps executing until the next break, meaning more console logs would be logged than wanted.
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('Not a valid day');
+}
+
+//doing the same example above using if/else
+if(day === 'monday'){
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+}else if(day === 'tuesday'){
+    console.log('Prepare theory videos');
+}else if (day ==='wednesday' || day === 'thursday'){
+    console.log('Write code examples');
+}else if(day === 'friday'){
+    console.log('Record videos');
+}else if (day === 'saturday' || day === 'sunday'){
+    console.log('Enjoy the weekend');
+}else{
+    console.log('Not a valid day');
+}
+
+// ********************************************** STATEMENTS AND EXPRESSIONS ***************************************
+// an expression is a piece of code that produce a value.
+// statements are like full sentences (comprised of expressions) that perform actions.
+//in a template literal, you can only insert expressions and not statements
+console.log(`I'm ${2037-1987} years old.`) //adding a statement (an if for example) in this template literal would not make sense.
+
+// ********************************************** THE CONDITIONAL (TERNARY) OPERATOR ********************************************
